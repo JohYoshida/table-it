@@ -4,9 +4,7 @@ A simple command line app that will table any string in 2 or 3 dimensions
 
 ## Example
 
-input:
-
-`table-it` in `2D`
+input: `table-it` in `2D`
 
 output:
 
@@ -48,5 +46,8 @@ A E S T H E T I C
 ## Installation
 
 1. Clone this repo `git clone git@github.com:JohYoshida/table-it.git`.
+2. Install packages `npm install`
+3. Run `npm start` and follow on-screen instructions.
 
-2. Run `npm start` and follow on-screen instructions.
+# Requirements
+- [Inquirer](https://github.com/SBoudrias/Inquirer.js) ^5.1.0
