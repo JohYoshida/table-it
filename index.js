@@ -1,5 +1,8 @@
 const inquirer = require("inquirer");
 
+const { boxIt } = require("./lib/box-it");
+const { cubeIt } = require("./lib/cube-it");
+
 const questions = [
   {
     type: "input",
@@ -18,5 +21,20 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(answers => {
-  console.log('Answers', answers);
+  let rows = [];
+
+  switch (answers.dimensions) {
+    case "2D":
+      rows = boxIt(answers.string);
+      break;
+    case "3D":
+      rows = cubeIt(answers.string);
+      break;
+    default:
+      console.log("How did you even get here?");
+  }
+
+  rows.forEach(row => {
+    console.log(row);
+  });
 });
