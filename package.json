@@ -10,7 +10,8 @@
     "jest": "^22.4.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
   },
   "author": "Joh Yoshida",
   "license": "ISC"
