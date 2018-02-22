@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 
 const boxIt = require("./lib/box-it");
-const { cubeIt } = require("./lib/cube-it");
+const cubeIt = require("./lib/cube-it");
 
 const questions = [
   {
