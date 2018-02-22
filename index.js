@@ -21,6 +21,15 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(answers => {
+  // Handle strings with length of 1
+  if (answers.string.length === 1) {
+    console.log(`You want one character in ${answers.dimensions}? Alright.`);
+    const arr = answers.string.split("")
+    console.log(arr[0]);
+    return;
+  }
+
+  // Handle 2D and 3D 
   let rows = [];
 
   switch (answers.dimensions) {
